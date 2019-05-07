@@ -6,6 +6,7 @@ use Phalcon\Mvc\Application;
 use Phalcon\Di\FactoryDefault;
 use Phalcon\Mvc\Url as UrlProvider;
 use Phalcon\Db\Adapter\Pdo\Mysql as DbAdapter;
+use Phalcon\Mvc\Micro;
 
 // Define some absolute path constants to aid in locating resources
 define('BASE_PATH', dirname(__DIR__));
@@ -52,23 +53,29 @@ $di->set(
         return new DbAdapter(
             [
                 'host'     => 'localhost',
-                'username' => 'username',
-                'password' => 'password',
-                'dbname'   => 'dbname',
+                'username' => 'root',
+                'password' => '',
+                'dbname'   => 'test',
             ]
         );
     }
 );
-
-
 
 $application = new Application($di);
 
 try {
     // Handle the request
     $response = $application->handle();
-
     $response->send();
 } catch (\Exception $e) {
+    // $app = new Micro();
+    // $app->get(
+    //     '/api/robots',
+    //     function () {
+    //         echo '<h1>Welcome!!!!!!</h1>';
+    //     }
+    // );
+    // $app->handle();
+
     echo 'Exception: ', $e->getMessage();
 }

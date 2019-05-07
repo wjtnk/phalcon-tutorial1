@@ -9,6 +9,8 @@
 // );
 
 use Phalcon\Mvc\Micro;
+use Phalcon\Logger;
+use Phalcon\Logger\Adapter\File as FileAdapter;
 
 $app = new Micro();
 
@@ -16,7 +18,7 @@ $app = new Micro();
 $app->get(
     '/api/robots',
     function () {
-        // Operation to fetch all the robots
+        echo '<h1>Welcome!</h1>';
     }
 );
 

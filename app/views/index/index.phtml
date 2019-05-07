@@ -2,6 +2,7 @@
 
 echo "<h1>Hello!</h1>";
 
+
 echo $this->tag->linkTo(["signup", "Sign Up Here!", 'class' => 'btn btn-primary']);
 
 if ($users->count() > 0) {
@@ -12,6 +13,8 @@ if ($users->count() > 0) {
             <th>#</th>
             <th>Name</th>
             <th>Email</th>
+            <th>送信</th>
+            <th>削除</th>
         </tr>
         </thead>
         <tfoot>
@@ -26,6 +29,17 @@ if ($users->count() > 0) {
                 <td><?php echo $user->id; ?></td>
                 <td><?php echo $user->name; ?></td>
                 <td><?php echo $user->email; ?></td>
+                <td>
+                  <form action="/signup/send" method="post">
+                        <input type="hidden" name="id" value="<?php echo $user->id; ?>" >
+                        <input type="submit" value="送信">
+                  </form>
+                </td>
+                <td>
+                  <form action="/signup/delete/<?php echo $user->id; ?>" method="post">
+                        <input type="submit" value="削除">
+                  </form>
+                </td>
             </tr>
         <?php } ?>
         </tbody>

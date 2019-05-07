@@ -1,0 +1,23 @@
+[Mon, 29 Apr 19 06:03:40 +0000][CRITICAL] This is a critical message
+[Mon, 29 Apr 19 06:05:13 +0000][CRITICAL] ddddd
+[Mon, 29 Apr 19 06:05:13 +0000][CRITICAL] ddddd
+[Mon, 29 Apr 19 06:05:13 +0000][CRITICAL] ddddd
+[Mon, 29 Apr 19 06:06:51 +0000][CRITICAL] deeee
+[Mon, 29 Apr 19 06:06:51 +0000][CRITICAL] deeee
+[Mon, 29 Apr 19 06:06:51 +0000][CRITICAL] deeee
+[Mon, 29 Apr 19 06:06:51 +0000][CRITICAL] deeee
+[Mon, 29 Apr 19 06:07:35 +0000][CRITICAL] this is index log
+[Mon, 29 Apr 19 06:08:03 +0000][CRITICAL] this is index log1
+[Mon, 29 Apr 19 06:09:37 +0000][CRITICAL] this is index log2
+[Mon, 29 Apr 19 06:10:34 +0000][CRITICAL] dddd
+[Mon, 29 Apr 19 06:12:04 +0000][CRITICAL] rnew
+[Mon, 29 Apr 19 06:13:21 +0000][CRITICAL] name
+[Mon, 29 Apr 19 06:15:02 +0000][CRITICAL] dddd
+[Mon, 29 Apr 19 06:20:09 +0000][DEBUG] This is a message
+[Mon, 29 Apr 19 06:20:26 +0000][DEBUG] This is a message
+[Mon, 29 Apr 19 06:21:35 +0000][EMERGENCY] Array
+[Mon, 29 Apr 19 06:22:46 +0000][EMERGENCY] Array
+[Mon, 29 Apr 19 06:23:07 +0000][DEBUG] This is a {message}
+[Mon, 29 Apr 19 06:23:25 +0000][EMERGENCY] Array
+[Mon, 29 Apr 19 06:30:45 +0000][DEBUG] This is a message
+[Mon, 29 Apr 19 06:33:00 +0000][DEBUG] This is a message!!!
